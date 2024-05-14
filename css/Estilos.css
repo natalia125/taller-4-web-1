@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    overflow-x: hidden; 
+}
+
+/* Encabezado */
+.header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-top: 30px;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links li a:hover {
+    color: white;
+    background-color: #afde3f;
+}
+
+/* Sección principal */
+.hero {
+    background-image: url("../Recursos/PrincipalIMG.jpg");
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    height: calc(100vh - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+.hero-content h1 {
+    color: black;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    width: 390px;
+    height: 320px;
+    background-color: white;
+    margin-left: -57%;
+}
+
+.price {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #afde3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 55%;
+}
+
+button:hover{
+    background-color: #afde3f;
+    color: black;
+}
+
+.reserva{
+    background-color: #afde3f;
+    color: white;
+    width: 340px;
+}
+
+.reserva:hover {
+    background-color: #c2ff48;
+    color: #333;
+}
+
+.destinations {
+    /* Quitamos display: flex */
+    justify-content: center;
+    padding: 50px;
+    margin-top: 0;
+}
+
+.destination {
+    display: inline-block; /* Cambiar a inline-block para que aparezcan uno al lado del otro */
+    width: calc(25% - 30px); /* Ajustar el ancho para que haya margen entre los destinos */
+    margin: 0 15px; /* Ajustar los márgenes entre los destinos */
+    text-align: center; /* Centrar el contenido */
+}
+
+.description-P1{
+    color: #afde3f;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.description-P2{
+    color: red;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.destination h3 {
+    margin: 0;
+    background-color: #afde3f;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+.destination img {
+    width: 100%; /* Hacer que la imagen tome el ancho completo del contenedor */
+    height: 225px; /* Mantener la proporción de aspecto */
+    object-fit: cover; /* Ajustar la imagen manteniendo la proporción de aspecto */
+    display: block; /* Asegurar que la imagen se muestre correctamente */
+    margin-top: 0;
+}
+
+
+.header .logo1 {
+    cursor: pointer;
+}
+
+.header .logo1 img {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 50px;
+    
+}
+
+
+
+.description {
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 80px;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 183px;
+    height: 170px;
+    margin: 0; 
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 1px solid #999; 
+}
+
+.flex-container > div:first-child {
+    margin-left: 0; 
+}
+
+.flex-container > div:last-child {
+    margin-right: 0; 
+}
+
+.flex-container > div img {
+    margin-top: 35px;
+    height: 100px;
+    width: 100px;
+}
+
+/*footer*/
+footer {
+    background-color: white;
+    color: #afde3f;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    width: 33.33%;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #afde3f;
+    text-decoration: none;
+}
+
+.social {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social li {
+    margin-right: 25px;
+}
+
+.social i {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.col-md-4 img {
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+}
+
